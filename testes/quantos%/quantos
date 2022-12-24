@@ -1,0 +1,12 @@
+para saber quantos % do seu código foi executado;
+
+basta utilizar no terminal a sintaxe:
+
+ " go test -cover " - mostra %
+ " go test -coverprofile=resultado.out " - cria um arquivo pra você
+ " go tool cover -func=resultado.out "" - mostra na tela, detalhado o arquivo que você criou 
+ " go tool cover -html=resultado.out" - mostra a mesma coisa na tela, porém numa página html
+ 
+
+claro, num arquivo e ambiente de test, se foi testado 100% e etc
+
