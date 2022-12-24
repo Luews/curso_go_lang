@@ -1,6 +1,8 @@
 package main
 
-import "math"
+import (
+	"math"
+)
 
 // Iniciando com letra maiúscula é PÚBLICO (visivel dentro e fora do pacote)!
 // Iniciando com letra minúscula é PRIVADO (visivel apenas dentro do pacote)!
@@ -16,6 +18,7 @@ type Ponto struct {
 func catetos(a, b Ponto) (cx, cy float64) {
 	cx = math.Abs(b.x - a.x)
 	cy = math.Abs(b.y - a.y)
+
 	return
 }
 
